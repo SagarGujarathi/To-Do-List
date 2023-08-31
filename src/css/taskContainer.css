@@ -1,0 +1,33 @@
+.task-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 7px;
+    gap: 7px;
+    width: 400px;
+    border-right: 1px solid var(--primary-border-color);
+    flex-shrink: 0;
+}
+
+.add-task {
+    margin: 1rem 0;
+    padding: 0 .7rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: #98a2c4cd;
+    cursor: pointer;
+}
+
+@media (max-width : 540px) {
+    .task-container {
+        padding: 1rem 7px;
+    }
+}
+
+@media (max-width : 380px) {
+    .task-container {
+        padding: 1rem 7px;
+        width: 100vw !important;
+        min-width: 330px;
+    }
+}
